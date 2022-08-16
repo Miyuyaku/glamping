@@ -6,11 +6,11 @@ Template Name: ホームページ
 
 <?php get_header(); ?>
 <div class="header_img"><img src="<?php echo get_template_directory_uri(); ?>/img/FUpF6v3UYAAISYx (1).jpeg" alt=""></div>
+
 <div class="news_logo">
-    <span>news</span>
+    <h2>news</h2>
 </div>
 <div class="top_flex">
-
     <div class="news">
         <?php
         //取得したい投稿記事などの条件を引数として渡す
@@ -48,3 +48,5 @@ Template Name: ホームページ
         <?php endif; ?>
     </div>
 </div>
+
+<?php get_footer(); ?>

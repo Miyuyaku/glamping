@@ -1,20 +1,26 @@
 .top_flex {
-    max-width: 1200px;
+    max-width: 900px;
     width: 60%;
     margin: 0 auto;
-    overflow:scroll;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
 
-.news_logo>span {
-    font-size: 35px;
-    font-family: 'American Typewriter',sans-serif;
+.news_logo>h2 {
+    max-width: 900px;
+    width: 60%;
+    margin: 0 auto;
     color: rgb(8, 8, 8);
+    font-family: 'American Typewriter',sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 30px;
 }
 
 .news {
     display: flex;
-    justify-content: space-between;
 }
 
 a {
@@ -22,13 +28,9 @@ a {
 }
 
 .news_item {
-    width: 22%;
-
+    width: 250px;
+    height: auto;
+    box-shadow: 3px 3px 3px 3px #eeeeee;
+    margin-right: 10px;
 }
 
-.news_logo {
-    max-width: 1200px;
-    width: 60%;
-    margin: 0 auto;
-}
-   

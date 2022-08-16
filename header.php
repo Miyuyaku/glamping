@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/footer.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive-blog.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sidebar.css">
+
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/43751a5777.js" crossorigin="anonymous"></script>
 
 
     <?php wp_head(); ?>
@@ -20,23 +24,18 @@
 
 <body>
     <header>
-   
         <nav>
-       
             <a href="<?php the_permalink(19) ?>">
                 <div class="glanping_icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/glanping.jpeg" alt="ロゴ">
                 </div>
             </a>
             <div class="item_link">
-                <a href="<?php the_permalink(7); ?>">
-                    <span>room</span>
+                <a href="<?php the_permalink(19); ?>">
+                    <span>home</span>
                 </a>
                 <a href="<?php the_permalink(9); ?>">
-                    <span>all inclusive</span>
-                </a>
-                <a href="<?php the_permalink(11); ?>">
-                    <span>food</span>
+                    <span>blog</span>
                 </a>
                 <a href="<?php the_permalink(13); ?>">
                     <span>information</span>
@@ -47,7 +46,7 @@
                 <a href="<?php the_permalink(1); ?>">
                     <span>contact</span>
                 </a>
+            </div>
         </nav>
-    </header>
 
-   
+    </header>

@@ -16,11 +16,12 @@ nav {
     padding-top: 30px;
 }
 
-.item_link>a {
+.item_link>a>span {
     margin-right: 50px;
     text-decoration: none;
-    font-family: 'American Typewriter',sans-serif;
-    color: rgba(254, 251, 251);
+    font-family: 'American Typewriter', sans-serif;
+    color: black;
+    -webkit-text-stroke: 1px white;
     font-weight: bold;
 }
 
@@ -28,7 +29,7 @@ nav {
 .glanping_icon>img {
     height: 130px;
     margin-left: 30px;
-
+    border-radius: 100%;
 }
 
 .header_img>img {
@@ -38,10 +39,11 @@ nav {
     position: relative;
     z-index: 1;
 }
- header {
+
+header {
     position: fixed;
     z-index: 99;
     left: 0;
     right: 0;
     margin: auto;
- }
+}

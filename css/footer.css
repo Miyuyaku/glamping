@@ -1,0 +1,56 @@
+footer {
+    background-color: #f7f7f7;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 60%;
+    margin: 0 auto
+}
+
+.section_item {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.section_item>h3 {
+    font-size: 17px;
+    margin: 30px 0 20px 0;
+    font-family: 'American Typewriter',sans-serif;
+    color: gray;
+}
+
+.section_item>p {
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.about_list>a {
+    display: flex;
+    font-size: 12px;
+    color: gray;
+    margin: 0px 0px 20px 0px;
+}
+
+.menu_list>a {
+    display: flex;
+    color: black;
+    border-top: solid 1px #777;
+}
+
+.menu_list>a>p {
+    font-size: 13px;
+}
+
+.menu_list>hr {
+    margin: 0;
+}
+
+.copyright {
+    margin: 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
