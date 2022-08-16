@@ -1,0 +1,34 @@
+.top_flex {
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+
+.news_logo>span {
+    font-size: 35px;
+    font-family: 'American Typewriter',sans-serif;
+    color: rgb(8, 8, 8);
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.news_item {
+    width: 22%;
+
+}
+
+.news_logo {
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 auto;
+}
+   

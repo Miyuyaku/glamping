@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "最初のコミット"
+git branch -M main
+git remote add origin git@github.com:Miyuyaku/glamping.git
+git push -u origin main
