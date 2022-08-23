@@ -23,7 +23,74 @@ nav {
     color: black;
     -webkit-text-stroke: 1px white;
     font-weight: bold;
+   
 }
+
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: transparent;
+    color: black;
+    border: none;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+/*----------------------------
+  * メニュー本体
+  *----------------------------*/
+.menu__item {
+    color: #1581f2e0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item_link {
+    display: none;
+}
+
+/*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+
+ /* アニメーション前のメニューの状態 */
+.menu {
+    transform: translateX(100vw);
+    transition: all .3s linear;
+    display: none;
+}
+
+/* アニメーション後のメニューの状態 */
+ .menu.active {
+    transform: translateX(0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #cbcbcb;
+    padding: 40px;
+}  
+
+
+
+
 
 
 .glanping_icon>img {
@@ -47,3 +114,4 @@ header {
     right: 0;
     margin: auto;
 }
+

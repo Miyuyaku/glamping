@@ -2,6 +2,7 @@
     max-width: 900px;
     width: 60%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 
 .pickup_item {
@@ -11,7 +12,7 @@
 
 .blog_pickup_thumnail img{
     width: 280px;
-    height: auto;
+    height: 150px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
 }
 
@@ -53,9 +54,11 @@ main {
 
 .blog_main_thumnail img {
     width: 600px;
-    height: auto;
+    height: 350px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
 }
+
+
 
 .ranking_logo>h2 {
     font-size: 17px;
@@ -70,26 +73,22 @@ main {
 
 .blog_ranking_thumnail img {
     width: 250px;
-    height: auto;
+    height: 150px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
 }
 
-.archive {
-    margin-bottom: 60px;
-    border-bottom: solid 1px #777;
+.twitter {
+    width: 250px;
 }
 
 
-.archive_logo h2{
+.twitter_logo h2{
     font-size: 17px;
     margin-bottom: 30px;
     font-family: 'American Typewriter',sans-serif;
 }
 
-.blog_archive_item>a>p{
+.ttwitter-tweet{
     margin: 0px;
     padding: 20px;
-    border-top: solid 1px #777;
-
-
 }

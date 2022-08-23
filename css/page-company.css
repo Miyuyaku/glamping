@@ -1,0 +1,110 @@
+.company_img>img {
+    height: auto;
+    max-height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.information {
+    max-width: 900px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+logo>h2 {
+    color: #04afcd;
+    font-family: 'Savoye LET', sans-serif;
+    font-size: 60px;
+    margin: 0;
+    height: 60px;
+}
+
+logo>span {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.company {
+    max-width: 900px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.company_flex {
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 0px #b3b0b0;
+    padding: 100px 10% 100px 7%;
+}
+
+.company_title {
+    display: grid;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.company_title::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin-top: 40px;
+}
+
+.company_title .en {
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.company_title .ja {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+text dt:first-of-type {
+    margin-top: 0;
+}
+
+text dt {
+    width: 30%;
+    margin-top: 20px;
+}
+
+text dd:first-of-type {
+    margin-top: 0;
+    margin: 0;
+}
+
+text dd {
+    width: 70%;
+    margin: 20px 0 0 0;
+}
+
+.company_box {
+    height: 100px;
+}
+
+.company_box>img {
+    width: 480px;
+    height: 380px;
+    box-shadow: 0px 0px 15px 0px #b3b0b0;
+    position: relative;
+    bottom: 470px;
+    left: 210px;
+}

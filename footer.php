@@ -23,29 +23,27 @@
                 <a href="<?php the_permalink(9); ?>">
                     <p>blog</p>
                 </a>
-                <a href="<?php the_permalink(13); ?>">
-                    <p>information</p>
+                <a href="#">
+                    <p>meal</p>
                 </a>
-                <a href="<?php the_permalink(15); ?>">
-                    <p>access</p>
+                <a href="#">
+                    <p>stay</p>
                 </a>
                 <a href="<?php the_permalink(1); ?>">
-                    <p>contact</p>
+                    <p>information</p>
                 </a>
                 <hr>
             </div>
         </div>
 
-        <!-- twitter -->
+        <!-- map -->
         <div class="section_item">
-            <h3>Twitter</h3>
-            <div class="twitter_link">
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <h3>Map</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.8314434286533!2d139.80984975822125!3d35.70991254504687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1660659143081!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+    </div>
 </footer>
 
 <p class="copyright">©️2022 yaku homepage</p>
@@ -54,3 +52,7 @@
 </body>
 
 </html>
+
+
+
+
