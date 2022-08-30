@@ -356,6 +356,7 @@ a {
 }
 
 .car {
+    width: 100vw;
     background-color: #a5d9d7;
 }
 
@@ -363,7 +364,7 @@ a {
     width: 120PX;
     position: relative;
     top: 25px;
-    animation: anim 4s forwards;
+    animation: anim 5s infinite linear;
 }
 
 
@@ -383,9 +384,11 @@ a {
         0% {
             transform: translateX(0px);
         }
-    
-        100% {
-            transform: translateX(2000px);
+
+        to {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
         }
-    }ï
+    }
 }
