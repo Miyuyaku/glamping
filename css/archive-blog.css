@@ -1,8 +1,8 @@
-.pickup {
+/* .pickup {
     max-width: 900px;
     width: 60%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .pickup_item {
@@ -14,18 +14,36 @@
     width: 280px;
     height: 150px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
+} */
+
+body {
+    background-color: #f1f0f0
 }
+
 
 .blog_main_item>a>h3 {
-    font-size: 20px;
-    color: black;  
-}
-
-p {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .blog_main_item>a>h3{
+        font-size: 20px;
+    }
+}
+
+p {
+    font-size: 8px;
+    color: black;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    p {
+        font-size: 12px;
+    }
+}
 .blog_main_item>p>a {
     color: black;
     margin-left: 10px;
@@ -33,13 +51,22 @@ p {
 }
 
 .container {
-    display: flex;
     justify-content: space-between;
     max-width: 900px;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
+    padding-top: 70px;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .container {
+        display: flex;
+        width: 60%;
+    }
+}
+
 
 main {
     max-width: 900px;
@@ -47,24 +74,32 @@ main {
     margin-top: 40px;
 }
 
+
 .blog_main_item {
     margin-bottom: 80px;
 }
 
 
 .blog_main_thumnail img {
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 200px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .blog_main_thumnail img {
+        width: 600px;
+        height: 350px;
+    }
+}
 
 
 .ranking_logo>h2 {
     font-size: 17px;
     margin-bottom: 20px;
     padding-top: 30px;
-    font-family: 'American Typewriter',sans-serif;
+    font-family: 'American Typewriter', sans-serif;
 }
 
 .blog_ranking_item {
@@ -72,23 +107,41 @@ main {
 }
 
 .blog_ranking_thumnail img {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height: 180px;
     box-shadow: 3px 3px 3px 3px #eeeeee;
+}
+
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .blog_ranking_thumnail img  {
+        width: 250px;
+    }
 }
 
 .twitter {
     width: 250px;
+    margin: 0 auto;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .twitter {
+        width: 250px;
+        
+    }
 }
 
 
-.twitter_logo h2{
+
+.twitter_logo h2 {
     font-size: 17px;
     margin-bottom: 30px;
-    font-family: 'American Typewriter',sans-serif;
+    font-family: 'American Typewriter', sans-serif;
 }
 
-.ttwitter-tweet{
+.ttwitter-tweet {
     margin: 0px;
     padding: 20px;
 }

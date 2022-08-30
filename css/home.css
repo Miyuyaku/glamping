@@ -1,9 +1,16 @@
 .top_flex {
     max-width: 900px;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     overflow: scroll;
     overflow-y: hidden;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .top_flex {
+        width: 60%;
+    }
 }
 
 .top {
@@ -22,14 +29,30 @@
 .news_logo>h2 {
     color: #04afcd;
     font-family: 'Savoye LET', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     margin: 0px;
-    height: 60px;
+    height: 30px;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .news_logo>h2 {
+        font-size: 60px;
+        height: 60px;
+    }
+}
+
+
 .news_logo>span {
-    font-size: 15px;
+    font-size: 12px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .news_logo>span {
+        font-size: 15px;
+    }
 }
 
 .news {
@@ -59,7 +82,7 @@ a {
 }
 
 .meal_contents {
-    width: 450px;
+    width: 90%;
     height: 300px;
     margin: 0 auto;
     position: relative;
@@ -67,6 +90,17 @@ a {
     padding: 70px;
     background: rgba(254, 255, 255, 0.7);
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .meal_contents {
+        width: 70%;
+        width: 450px;
+    }
+}
+
+
+
 
 .meal_logo {
     text-align: center;
@@ -76,18 +110,33 @@ a {
 .meal_logo>h2 {
     color: #04afcd;
     font-family: 'Savoye LET', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     margin: 0;
-    height: 60px;
+    height: 30px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .meal_logo>h2 {
+        font-size: 60px;
+        height: 60px;
+    }
 }
 
 .meal_logo>span {
-    font-size: 15px;
+    font-size: 12px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .meal_logo>span {
+        font-size: 15px;
+    }
 }
 
 .meal_btn {
+    width: auto;
     text-align: center;
-    width: 250px;
     margin: 0 auto;
     padding: 15px;
     background-color: rgb(4, 175, 205);
@@ -95,14 +144,39 @@ a {
     border-radius: 30px;
 }
 
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .meal_btn {
+        width: 250px;
+    }
+}
+
+
 .meal_btn>a {
     color: rgb(254, 253, 253);
+    font-size: 12px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:600px) {
+    .meal_btn>a {
+        font-size: 15px;
+    }
 }
 
 .stay {
     background-color: #a5d9d7;
-    padding-top: 130px;
-    padding-bottom: 200px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay {
+        padding-top: 130px;
+        padding-bottom: 200px;
+    }
 }
 
 .stay_logo {
@@ -115,44 +189,96 @@ a {
 .stay_logo>h2 {
     color: #04afcd;
     font-family: 'Savoye LET', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     margin: 0px;
-    height: 60px;
+    height: 30px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_logo>h2 {
+        font-size: 60px;
+        height: 60px;
+    }
 }
 
 .stay_logo>span {
-    font-size: 15px;
+    font-size: 12px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_logo>span {
+        font-size: 15px;
+    }
 }
 
 .stay_content {
-    display: flex;
     max-width: 1200px;
-    width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
     margin-top: 70px;
-    opacity: 0;
+    text-align: center;
 }
+
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_content {
+        display: flex;
+        justify-content: space-between
+    }
+}
+
+
 
 .stay_link:nth-of-type(even) {
     position: relative;
-    top: 4rem;
+    top: 0rem;
+}
+
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_link:nth-of-type(even) {
+        top: 4rem;
+    }
 }
 
 .stay_up>img {
-    width: 280px;
-    height: 230px;
+    width: 90%;
+    height: 200px;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_up>img {
+        width: 70%;
+        width: 280px;
+    }
+}
+
 
 .stay_caption {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1px 0 1px 0;
-    width: 280px;
-    position: relative;
-    left: 15px;
-    bottom: 20px;
+    width: 90%;
     box-shadow: 2px 2px 20px 0 #949494;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
+
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_caption {
+        width: 70%;
+        position: relative;
+        left: 15px;
+        bottom: 20px;
+        width: 280px;
+    }
+}
+
 
 .stay_title {
     text-align: center;
@@ -161,18 +287,25 @@ a {
 .stay_title>span {
     color: #04afcd;
     font-family: 'Savoye LET', sans-serif;
-    font-size: 35px;
+    font-size: 28px;
     border-bottom: dashed#04afcd;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_title>span {
+        font-size: 35px;
+    }
+}
+
 .stay_text>p {
-    font-size: 13px;
+    font-size: 12px;
 
 }
 
 .stay_btn {
     text-align: center;
-    width: 250px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 80px;
     padding: 15px;
@@ -181,6 +314,78 @@ a {
     border-radius: 30px;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_btn {
+        width: 250px;
+    }
+}
+
+
+
 .stay_btn>a {
     color: rgb(254, 253, 253);
+    font-size: 12px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    .stay_btn>a {
+        font-size: 15px;
+    }
+}
+
+/* スクロールしたらバナーを表示 */
+
+.meal_img img {
+    /* フェードイン速度の調整 */
+    transition: .7s ease-in-out;
+}
+
+
+/* ふわっと表示 */
+.stay_link {
+    /*デフォルトで透明度0に指定*/
+    opacity: 0;
+    transition: 2s;
+}
+
+/*スクロールした時に追加されるクラス*/
+.fadein {
+    opacity: 1;
+}
+
+.car {
+    background-color: #a5d9d7;
+}
+
+.car img {
+    width: 120PX;
+    position: relative;
+    top: 25px;
+    animation: anim 4s forwards;
+}
+
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1125px) {
+    @keyframes anim {
+        0% {
+            transform: translateX(0px);
+        }
+    
+        100% {
+            transform: translateX(2000px);
+        }
+    }ï
 }

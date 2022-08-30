@@ -18,29 +18,65 @@
 logo>h2 {
     color: #04afcd;
     font-family: 'Savoye LET', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     margin: 0;
-    height: 60px;
+    height: 30px;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    logo>h2{
+        font-size: 60px;
+        height: 60px;
+    }
+}
+
 
 logo>span {
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 12px;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    logo>span{
+        font-size: 15px;
+    }
+}
+
 
 .company {
     max-width: 900px;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 250px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .company {
+        width: 60%;
+        padding-bottom: 0px;
+    }
 }
 
 .company_flex {
-    width: 55%;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px 0px #b3b0b0;
-    padding: 100px 10% 100px 7%;
+    padding: 50px 10% 50px 10%;
+    margin-bottom: 20px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .company_flex  {
+        width: 55%;
+        padding: 100px 10% 100px 7%;
+        margin-bottom: 0px;
+    }
 }
 
 .company_title {
@@ -60,15 +96,28 @@ logo>span {
 }
 
 .company_title .en {
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 10px;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .company_title .en {
+        font-size: 30px;
+    }
+}
+
 .company_title .ja {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 100;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .company_title .ja {
+        font-size: 13px;
+    }
+}
 
 text {
     display: flex;
@@ -84,6 +133,14 @@ text dt:first-of-type {
 text dt {
     width: 30%;
     margin-top: 20px;
+    font-size: 13px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    text dt {
+        font-size: 16px;
+    }
 }
 
 text dd:first-of-type {
@@ -94,6 +151,14 @@ text dd:first-of-type {
 text dd {
     width: 70%;
     margin: 20px 0 0 0;
+    font-size: 13px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    text dd {
+        font-size: 16px;
+    }
 }
 
 .company_box {
@@ -101,10 +166,18 @@ text dd {
 }
 
 .company_box>img {
-    width: 480px;
-    height: 380px;
+    width: 100%;
+    height: 300px;
     box-shadow: 0px 0px 15px 0px #b3b0b0;
-    position: relative;
-    bottom: 470px;
-    left: 210px;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .company_box>img {
+        width: 480px;
+        height: 380px;
+        position: relative;
+        bottom: 470px;
+        left: 210px;
+    }
 }

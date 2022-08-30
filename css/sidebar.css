@@ -1,7 +1,14 @@
 .side {
-    max-width: 250px;
     margin-top: 70px;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    .side{
+        max-width: 250px;
+    }
+}
+
 
 .profile_img{
     text-align: center;
@@ -15,7 +22,13 @@
 
 h2 {
     text-align: center;
-    font-size: 17px;
+    font-size: 13px;
     margin: 40px 0;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1400px) {
+    h2{
+        font-size: 17px;
+    }
+}

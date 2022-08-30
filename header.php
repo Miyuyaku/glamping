@@ -37,13 +37,13 @@
     </script>
 
     <header>
+        
+        <a class="menu__item" href="<?php the_permalink(19) ?>">
+            <div class="glanping_icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2661.PNG" alt="ロゴ">
+            </div>
+        </a>
         <nav>
-
-            <a class="menu__item" href="<?php the_permalink(19) ?>">
-                <div class="glanping_icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2661.PNG" alt="ロゴ">
-                </div>
-            </a>
             <!-- ハンバーガーメニュー部分 -->
             <button type="button" class="menu-btn">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -51,8 +51,8 @@
             <div class="menu">
                 <a class="menu__item" href="<?php the_permalink(19) ?>">home</a>
                 <a class="menu__item" href="<?php the_permalink(9) ?>">blog</a>
-                <a class="menu__item" href="<?php the_permalink(15) ?>">meal</a>
-                <a class="menu__item" href="<?php the_permalink(17) ?>">stay</a>
+                <a class="menu__item" href="#">meal</a>
+                <a class="menu__item" href="#">stay</a>
                 <a class="menu__item" href="<?php the_permalink(13) ?>">information</a>
             </div>
 

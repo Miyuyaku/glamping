@@ -23,7 +23,7 @@ nav {
     color: black;
     -webkit-text-stroke: 1px white;
     font-weight: bold;
-   
+
 }
 
 /*----------------------------
@@ -34,18 +34,35 @@ nav {
     top: 0px;
     right: 0px;
     z-index: 2;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
     background: transparent;
-    color: black;
+    color: white;
     border: none;
 }
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .menu-btn  {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
 .fa-bars {
-    font-size: 30px;
+    font-size: 18px;
+}
+
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .fa-bars {
+        font-size: 30px;
+    }
 }
 
 /*----------------------------
@@ -54,9 +71,18 @@ nav {
 .menu__item {
     color: #1581f2e0;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: bold;
 }
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .menu__item  {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
 
 .item_link {
     display: none;
@@ -66,7 +92,7 @@ nav {
   * アニメーション部分
   *----------------------------*/
 
- /* アニメーション前のメニューの状態 */
+/* アニメーション前のメニューの状態 */
 .menu {
     transform: translateX(100vw);
     transition: all .3s linear;
@@ -74,7 +100,7 @@ nav {
 }
 
 /* アニメーション後のメニューの状態 */
- .menu.active {
+.menu.active {
     transform: translateX(0);
     position: fixed;
     top: 0;
@@ -84,34 +110,53 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #cbcbcb;
-    padding: 40px;
-}  
+    background: rgb(255, 255, 255);
+    padding: 30px;
+}
 
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .menu.active  {
+        width: 300px;
+        height: 100vh;
+        padding: 50px;
+    }
+}
 
 
 
 
 
 .glanping_icon>img {
-    height: 130px;
-    margin-left: 30px;
+    width: 50px;
+    height: auto;
     border-radius: 100%;
+    position: relative;
+    bottom: 10px;
+    z-index: 99;
+    opacity: 0;
+}
+
+/* min-widthは〇〇以上の意味 */
+@media (min-width:1000px) {
+    .glanping_icon>img {
+        width: 100px;
+        opacity: 1;
+    }
 }
 
 .header_img>img {
-    height: auto;
-    max-height: 900px;
+    max-height: 600px;
     width: 100%;
     position: relative;
     z-index: 1;
 }
 
+
 header {
-    position: fixed;
     z-index: 99;
     left: 0;
     right: 0;
     margin: auto;
+    height: 0px;
 }
-

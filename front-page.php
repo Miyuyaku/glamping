@@ -5,7 +5,8 @@ Template Name: ホームページ
 ?>
 
 <?php get_header(); ?>
-<div class="header_img"><img src="<?php echo get_template_directory_uri(); ?>/img/FUpF6v3UYAAISYx (1).jpeg" alt=""></div>
+<div class="header_img"><img src="<?php echo get_template_directory_uri(); ?>/img/FUpF6v3UYAAISYx (1).jpeg" alt="">
+</div>
 
 <div class="top">
     <div class="news_logo">
@@ -75,7 +76,7 @@ Template Name: ホームページ
         <h2>Stay</h2>
         <span>ご宿泊</span>
     </div>
-    <div class="stay_content show">
+    <div class="stay_content">
         <a href="#" class="stay_link">
             <div class="stay_up">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/22.jpeg" alt="ドームテント">
@@ -133,21 +134,38 @@ Template Name: ホームページ
         <a href="#">VIEW MORE<i class="fa-solid fa-angles-right"></i></a>
     </div>
 </div>
+<!-- スクロールしたら車が動く -->
+<div class="car">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/1.gif" alt="">
+</div>
 
 <!-- スクロールしたらバナーを表示 -->
-
 <script>
     $(function() {
-        $(window).on('load scroll', function() {
-            var winScroll = $(window).scrollTop();
-            var winHeight = $(window).height();
-            var scrollPos = winScroll + (winHeight * 0.5);
+        //画面をスクロールするとイベントが発動する
+        $(window).scroll(function() {
 
-            $(".show").each(function() {
-                if ($(this).offset().top < scrollPos) {
+            //フェードインさせたい要素の位置をずらす
+            $('.meal_img img').css({
+                'opacity': '0',
+                'transform': 'translateX(-30px)'
+            });
+
+            //スクロールバーの位置を取得
+            var scroll = $(window).scrollTop();
+
+            //ウィンドウの高さを取得
+            var windowHeight = $(window).height();
+
+            $('.meal_img img').each(function() {
+                //フェードインさせたい要素の縦位置を取得
+                var elemPos = $(this).offset().top;
+
+                //要素がウィンドウの中に入ってからさらに100pxスクロールしたら要素をフェードインする
+                if (scroll > elemPos - windowHeight + 100) {
                     $(this).css({
-                        opacity: 1,
-                        transform: 'translate(0, 0)'
+                        'opacity': '1',
+                        'transform': 'translateX(0)'
                     });
                 }
             });
@@ -155,13 +173,26 @@ Template Name: ホームページ
     });
 </script>
 
-<!-- ふわっと -->
+
+<!-- ふわっと表示 -->
+
 <script>
-    $(function() {
-        ScrollReveal().reveal('.meal_img', {
-            duration: 2500, // アニメーションの完了にかかる時間
-            viewFactor: 0.3, // 0~1,どれくらい見えたら実行するか
-            reset: true // 何回もアニメーション表示するか
+    $(window).scroll(function() {
+        // クラスを追加するwindowの位置を設定
+        var scrollTop = $(this).scrollTop();
+        var scrollBottom = scrollTop + $(this).height();
+        var effectPos = scrollBottom - 50;
+
+        // eachでliを順番に処理
+        $(".stay_link").each(function(i) {
+            if (effectPos > $(this).offset().top) {
+                var that = this;
+
+                // 0.2s毎にずれて表示
+                setTimeout(function() {
+                    $(that).addClass("fadein");
+                }, 400 * i);
+            }
         });
     });
 </script>
